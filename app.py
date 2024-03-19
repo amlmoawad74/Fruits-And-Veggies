@@ -9,11 +9,8 @@ app = Flask(__name__)
 
 # Load the model
 model_path = 'MyModel.keras'  # Adjust the path to your model file
-try:
-    model = tf.keras.models.load_model(model_path)
-    model.summary()  # Print model summary for debugging
-except Exception as e:
-    print("Error loading the model:", e)
+model = tf.keras.models.load_model(model_path)
+model.summary()  # Print model summary for debugging
 
 print('Model loaded. Check http://127.0.0.1:5000/')
 
