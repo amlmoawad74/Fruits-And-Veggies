@@ -3,5 +3,4 @@ Flask
 tensorflow
 numpy
 Pillow
-keras
-werkzeug
+keras==2.15.0
