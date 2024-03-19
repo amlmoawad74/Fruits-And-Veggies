@@ -4,6 +4,7 @@ import numpy as np
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from flask import Flask, request, render_template, jsonify
 from werkzeug.utils import secure_filename
+from PIL import Image
 
 app = Flask(__name__)
 
